@@ -1,0 +1,95 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.fullscreen-image {
+    height: 100vh;
+    background: url('../assets/background.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparenter Hintergrund */
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+    padding: 10px 20px; /* Innenabstand */
+}
+
+.navbar-brand img {
+    max-height: 50px; /* Startgröße des Logos */
+    transition: max-height 0.3s ease-in-out;
+}
+
+.navbar-brand, .nav-link {
+    transition: all 0.3s ease;
+    color: black;
+}
+
+.navbar.shrink {
+    background-color: rgba(255, 255, 255, 1); /* Hintergrundfarbe wird beim Scrollen vollfarbig */
+    padding: 5px 20px; /* Weniger Innenabstand beim Scrollen */
+}
+
+.navbar.shrink .navbar-brand img {
+    max-height: 35px; /* Kleineres Logo beim Scrollen */
+}
+
+.navbar.shrink .navbar-brand {
+    font-size: 0.5rem;
+}
+
+.navbar.shrink .nav-link {
+    font-size: 0.7rem;
+}
+
+.nav-link i {
+    margin-right: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.navbar.shrink .nav-link i {
+    font-size: 0;
+}
+
+footer {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+footer .bi {
+    margin-right: 0.5rem;
+}
+
+/* Globale Einstellungen für alle Sections */
+.fullscreen-section {
+    min-height: 100vh; /* Mindesthöhe entspricht der Höhe des Bildschirms */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Fügt etwas Innenabstand hinzu */
+    box-sizing: border-box;
+}
+
+/* Spezifische Stile für die Inhalte */
+.fullscreen-section > .container {
+    max-width: 100%; /* Container nimmt die volle Breite ein */
+    flex: 1 1 auto; /* Container kann wachsen und schrumpfen je nach Inhalt */
+}
+
+/* Mobilgeräte-Anpassungen */
+@media (max-width: 768px) {
+    .fullscreen-section {
+        padding: 10px; /* Weniger Innenabstand auf kleinen Bildschirmen */
+    }
+}
