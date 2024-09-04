@@ -6,7 +6,7 @@ body, html {
 
 .fullscreen-image {
     height: 100vh;
-    background: url('../assets/background.jpg') no-repeat center center;
+    background: url('../assets/img/photodune-EPXv4Lzz-sand-dunes-at-north-sea-beach-l-min.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -17,9 +17,14 @@ body, html {
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.8); /* Transparenter Hintergrund */
+    background-color: rgba(255, 255, 255, 0.3); /* Transparenter Hintergrund */
     transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
     padding: 10px 20px; /* Innenabstand */
+}
+
+.bg-beige{
+    background: rgba(208, 177, 152, 0.50);
+    color: black; !important;
 }
 
 .navbar-brand img {
@@ -33,7 +38,7 @@ body, html {
 }
 
 .navbar.shrink {
-    background-color: rgba(255, 255, 255, 1); /* Hintergrundfarbe wird beim Scrollen vollfarbig */
+    background-color: rgba(255, 255, 255, 0.9); /* Hintergrundfarbe wird beim Scrollen vollfarbig */
     padding: 5px 20px; /* Weniger Innenabstand beim Scrollen */
 }
 
