@@ -256,14 +256,14 @@
 
 <!-- Buchen -->
 <section id="booking" class="fullscreen-section bg-beige d-flex align-items-center position-relative">
-    <!-- Overlay mit "Under Construction" -->
+    <!-- Overlay mit "In Bearbeitung" -->
     <div class="overlay">
         <div class="overlay-text">
             In Bearbeitung
         </div>
     </div>
 
-    <div class="container">
+    <div class="container no-interaction">
         <h2 class="text-center mb-4">Buchen</h2>
         <form class="row g-3">
             <!-- Name -->
@@ -310,8 +310,7 @@
             <!-- Nachricht -->
             <div class="col-12">
                 <label for="inputMessage" class="form-label">Nachricht</label>
-                <textarea class="form-control" id="inputMessage" rows="4"
-                          placeholder="Ihre Nachricht (optional)"></textarea>
+                <textarea class="form-control" id="inputMessage" rows="4" placeholder="Ihre Nachricht (optional)"></textarea>
             </div>
 
             <!-- Absenden -->
@@ -335,7 +334,6 @@
         align-items: center;
         justify-content: center;
         z-index: 10;
-        pointer-events: none; /* Verhindert, dass das Overlay die Formularinteraktion blockiert */
     }
 
     /* Textstil im Overlay */
@@ -344,6 +342,11 @@
         font-size: 2rem;
         font-weight: bold;
         text-align: center;
+    }
+
+    /* Deaktiviert Interaktionen für das gesamte Formular und den Container */
+    .no-interaction {
+        pointer-events: none; /* Verhindert jegliche Interaktion */
     }
 
     /* Buchungsformular anpassen */
@@ -358,14 +361,16 @@
 <section id="contact" class="fullscreen-section bg-light text-dark d-flex align-items-center">
     <div class="container text-center">
         <h2>Kontakt</h2>
-        <p class="lead">Haben Sie Fragen oder möchten Sie uns besuchen? Wir freuen uns auf Ihre Kontaktaufnahme! Wählen Sie einfach einen der nachfolgenden Optionen</p>
-
+        <p class="lead">Haben Sie Fragen oder möchten Sie uns besuchen? Wir freuen uns auf Ihre Kontaktaufnahme!</p>
+        <p class="lead">Wählen Sie einfach einen der nachfolgenden Optionen</p>
+        <br>
         <!-- Adresse -->
         <div class="mb-4">
             <h4>Unsere Adresse</h4>
-            <p>Daunstraße 3, 26452 Sande</p>
+            <p class="lead">Daunstraße 3, 26452 Sande</p>
+            <p>Wir freuen uns auf Ihren Besuch!</p>
         </div>
-
+        <br>
         <!-- Buttons für Anruf und Navigation -->
         <div class="d-flex justify-content-center">
             <a href="tel:044222666" class="btn btn-secondary btn-lg mx-2">
