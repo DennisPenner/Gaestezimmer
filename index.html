@@ -121,50 +121,60 @@
         </div>
         <br>
         <div class="row justify-content-center">
-            <div class="col-md-4 mb-4 d-flex align-items-center justify-content-center">
-                <div class="card" style="height: 360px;">
-                    <div class="card-body text-center">
+            <div class="col-md-4 mb-4 d-flex align-items-stretch">
+                <div class="card w-100" style="height: auto;">
+                    <div class="card-body d-flex flex-column">
                         <h4 class="card-title">Einzelzimmer</h4>
                         <h4 class="display-4 card-title">30,00€*</h4>
                         <p>* Ab 2 Nächte. Bei einer Nacht 35,00€</p>
                         <h6 class="text-muted card-subtitle mb-2">Basispreis pro Tag</h6>
-                        <div class="d-flex justify-content-between" style="height: 140px;">
-                            <ul style="padding-left: 5px;">
-                                <li>Frühstück</li>
-                                <li>Kinder bis 5 Jahre ohne eigenes Bett</li>
-                                <li>Haustiere</li>
-                            </ul>
-                            <ul class="list-unstyled" style="padding-left: 20px;">
-                                <li>7,50€</li>
-                                <li>1€ pro Lebensjahr</li>
-                                <li>10€ einmalig</li>
+                        <div class="d-flex flex-column justify-content-between flex-grow-1">
+                            <ul class="list-group list-group-flush w-100">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Frühstück
+                                    <span>7,50€</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Kinder bis 5 Jahre ohne eigenes Bett
+                                    <span>1€ pro Lebensjahr</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Haustiere
+                                    <span>10€ einmalig</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4 d-flex align-items-center justify-content-center">
-                <div class="card" style="height: 360px;">
-                    <div class="card-body text-center">
+
+            <div class="col-md-4 mb-4 d-flex align-items-stretch">
+                <div class="card w-100" style="height: auto;">
+                    <div class="card-body d-flex flex-column">
                         <h4 class="card-title">Doppelzimmer</h4>
                         <h4 class="display-4 card-title">60,00€*</h4>
                         <p>* Ab 2 Nächte. Bei einer Nacht 70,00€</p>
                         <h6 class="text-muted card-subtitle mb-2">Basispreis pro Tag</h6>
-                        <div class="d-flex justify-content-between" style="height: 140px;">
-                            <ul style="padding-left: 5px;">
-                                <li>Frühstück</li>
-                                <li>Kinder bis 5 Jahre ohne eigenes Bett</li>
-                                <li>Haustiere</li>
-                            </ul>
-                            <ul class="list-unstyled" style="padding-left: 20px;">
-                                <li>15,00€</li>
-                                <li>1€ pro Lebensjahr</li>
-                                <li>10€ einmalig</li>
+                        <div class="d-flex flex-column justify-content-between flex-grow-1">
+                            <ul class="list-group list-group-flush w-100">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Frühstück
+                                    <span>15,00€</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Kinder bis 5 Jahre ohne eigenes Bett
+                                    <span>1€ pro Lebensjahr</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Haustiere
+                                    <span>10€ einmalig</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -264,7 +274,7 @@
     </div>
 
     <div class="container no-interaction">
-        <h2 class="text-center mb-4">Buchen</h2>
+        <h2 class="text-center mb-4">Buchungsanfrage</h2>
         <form class="row g-3">
             <!-- Name -->
             <div class="col-md-6">
@@ -310,7 +320,8 @@
             <!-- Nachricht -->
             <div class="col-12">
                 <label for="inputMessage" class="form-label">Nachricht</label>
-                <textarea class="form-control" id="inputMessage" rows="4" placeholder="Ihre Nachricht (optional)"></textarea>
+                <textarea class="form-control" id="inputMessage" rows="4"
+                          placeholder="Ihre Nachricht (optional)"></textarea>
             </div>
 
             <!-- Absenden -->
@@ -354,7 +365,6 @@
         position: relative;
     }
 </style>
-
 
 
 <!-- Kontakt -->
