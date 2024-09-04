@@ -23,9 +23,9 @@ body, html {
 }
 
 .navbar-brand img {
-    max-height: 50px; /* Startgröße des Logos */
-    transition: max-height 0.3s ease-in-out;
-}
+    max-height: 100px; /* Startgröße des Logos */
+    max-width: 100px; /* Startgröße des Logos */
+    transition: max-height 0.3s ease-in-out, max-width 0.3s ease-in-out; /* Transition für Höhe und Breite */}
 
 .navbar-brand, .nav-link {
     transition: all 0.3s ease;
@@ -38,7 +38,8 @@ body, html {
 }
 
 .navbar.shrink .navbar-brand img {
-    max-height: 35px; /* Kleineres Logo beim Scrollen */
+    max-height: 50px; /* Kleineres Logo beim Scrollen */
+    max-width: 50px; /* Kleineres Logo beim Scrollen */
 }
 
 .navbar.shrink .navbar-brand {
