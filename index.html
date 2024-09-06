@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gästezimmer</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>Elenas Pension</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
@@ -23,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about"><i class="bi bi-info-circle-fill"></i> Vorstellung</a>
+                    <a class="nav-link" href="#about"><i class="bi bi-info-circle-fill"></i> Über uns</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#gallery"><i class="bi bi-images"></i> Galerie</a>
@@ -89,8 +90,7 @@
     <div class="container">
         <h2 class="text-center">Galerie</h2>
         <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <!-- Beispielbilder -->
+            <div class="carousel-inner" style="max-height: 80vh">
                 <div class="carousel-item active">
                     <img src="assets/img/Zimmer/IMG_0037.JPG" class="d-block w-100" alt="Zimmerbild 1">
                 </div>
@@ -136,11 +136,15 @@
             <div class="col-md-4 mb-4 d-flex align-items-stretch">
                 <div class="card w-100" style="height: auto;">
                     <div class="card-body d-flex flex-column">
-                        <h4 class="card-title">Einzelzimmer</h4>
+                        <h4 class="card-title">Einzelzimmer für eine Person</h4>
                         <h4 class="display-4 card-title">35,00€</h4>
                         <h6 class="text-muted card-subtitle mb-2">Basispreis pro Tag</h6>
                         <div class="d-flex flex-column justify-content-between flex-grow-1">
                             <ul class="list-group list-group-flush w-100">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <h6 class="text-muted card-subtitle mb-2">Service</h6>
+                                    <span><h6 class="text-muted card-subtitle mb-2">Zusätzlich pro Tag</h6></span>
+                                </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
                                     Frühstück
                                     <span>7,50€</span>
@@ -154,6 +158,11 @@
                                     <span>10€ einmalig</span>
                                 </li>
                             </ul>
+                            <h6 class="text-muted card-subtitle mb-2 blockquote-footer" style="padding-top: 10px">
+                                Wir versuchen, alle Preise aktuell zu halten. Dennoch können wir nicht ausschließen,
+                                dass die Preise nicht aktuell sind. Sie erhalten bei der Buchung einen Kostenvoranschlag
+                                für den gesamten Aufenthalt bei uns.
+                            </h6>
                         </div>
                     </div>
                 </div>
@@ -162,11 +171,15 @@
             <div class="col-md-4 mb-4 d-flex align-items-stretch">
                 <div class="card w-100" style="height: auto;">
                     <div class="card-body d-flex flex-column">
-                        <h4 class="card-title">Doppelzimmer</h4>
+                        <h4 class="card-title">Doppelzimmer für zwei Personen</h4>
                         <h4 class="display-4 card-title">70,00€</h4>
                         <h6 class="text-muted card-subtitle mb-2">Basispreis pro Tag</h6>
                         <div class="d-flex flex-column justify-content-between flex-grow-1">
                             <ul class="list-group list-group-flush w-100">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <h6 class="text-muted card-subtitle mb-2">Service</h6>
+                                    <span><h6 class="text-muted card-subtitle mb-2">Zusätzlich pro Tag</h6></span>
+                                </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
                                     Frühstück
                                     <span>15,00€</span>
@@ -180,70 +193,80 @@
                                     <span>10€ einmalig</span>
                                 </li>
                             </ul>
+                            <h6 class="text-muted card-subtitle mb-2 blockquote-footer" style="padding-top: 10px">
+                                Wir versuchen, alle Preise aktuell zu halten. Dennoch können wir nicht ausschließen,
+                                dass die Preise nicht aktuell sind. Sie erhalten bei der Buchung einen Kostenvoranschlag
+                                für den gesamten Aufenthalt bei uns.
+                            </h6>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">Unser Service für Sie</h4>
-                        <h6 class="text-muted card-subtitle mb-2">Alle unten genannten Services sind im Preis
-                            enthalten</h6>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <ul>
-                                    <li>Fernseher</li>
-                                    <li>W-LAN</li>
-                                    <li>Bad mit Dusche</li>
-                                    <li>Fön und Handtücher</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-4">
-                                <ul>
-                                    <li>Überdachte Raucherbereiche</li>
-                                    <li>Stellplatz für Fahrzeuge</li>
-                                    <li>Überdachung für Fahrräder</li>
-                                    <li>Küchenbereich mit Mikrowelle, Wasserkocher, Kaffeemaschine, Kühlschrank</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-4">
-                                <ul>
-                                    <li>Fertig beziehbare Zimmer</li>
-                                    <li>Reinigungsservice</li>
-                                    <li>Aufenthaltsraum</li>
-                                </ul>
-                            </div>
-                        </div>
 
-                        <h4 class="card-title">In der Nähe</h4>
-                        <h6 class="text-muted card-subtitle mb-2">Folgendes finden Sie in unmittelbarer Nähe zu uns</h6>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <ul>
-                                    <li>Krankenhaus</li>
-                                    <li>E-Ladesäule</li>
-                                    <li>Bäckerei</li>
-                                    <li>Einkaufsmöglichkeiten</li>
-                                </ul>
+        <div class="row justify-content-center">
+
+            <div class="col-md-8 mb-8 d-flex align-items-stretch">
+
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Unser Service für Sie</h4>
+                            <h6 class="text-muted card-subtitle mb-2">Alle unten genannten Services sind im Preis
+                                enthalten</h6>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <ul>
+                                        <li>Fernseher</li>
+                                        <li>W-LAN</li>
+                                        <li>Bad mit Dusche</li>
+                                        <li>Fön und Handtücher</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul>
+                                        <li>Überdachte Raucherbereiche</li>
+                                        <li>Stellplatz für Fahrzeuge</li>
+                                        <li>Überdachung für Fahrräder</li>
+                                        <li>Küchenbereich mit Mikrowelle, Wasserkocher, Kaffeemaschine, Kühlschrank</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul>
+                                        <li>Fertig beziehbare Zimmer</li>
+                                        <li>Reinigungsservice</li>
+                                        <li>Aufenthaltsraum</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-sm-4">
-                                <ul>
-                                    <li>Bahnhof</li>
-                                    <li>Sander See</li>
-                                    <li>Ems-Jade-Kanal</li>
-                                    <li>Eishalle</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-4">
-                                <ul>
-                                    <li>Twister (Disko)</li>
-                                    <li>Fahrrad und Kanuverleih</li>
-                                    <li>Eisdiele</li>
-                                </ul>
+
+                            <h4 class="card-title">In der Nähe</h4>
+                            <h6 class="text-muted card-subtitle mb-2">Folgendes finden Sie in unmittelbarer Nähe zu
+                                uns</h6>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <ul>
+                                        <li>Krankenhaus</li>
+                                        <li>E-Ladesäule</li>
+                                        <li>Bäckerei</li>
+                                        <li>Einkaufsmöglichkeiten</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul>
+                                        <li>Bahnhof</li>
+                                        <li>Sander See</li>
+                                        <li>Ems-Jade-Kanal</li>
+                                        <li>Eishalle</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul>
+                                        <li>Twister (Disko)</li>
+                                        <li>Fahrrad und Kanuverleih</li>
+                                        <li>Eisdiele</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -400,6 +423,7 @@
             <a href="http://maps.google.com/?q=Elenas Pension Daunstrasse 3 26452 Sande"
                class="btn btn-secondary btn-lg mx-2" target="_blank">
                 <i class="bi bi-geo-alt-fill"></i> Navigation starten
+                <p class="small">Google Maps</p>
             </a>
             <a href="mailto:info@elenas-pension.de" class="btn btn-secondary btn-lg mx-2">
                 <i class="bi bi-envelope-fill"></i> E-Mail senden
@@ -414,12 +438,12 @@
     <div class="container p-4">
         <ul class="list-unstyled d-flex justify-content-center">
             <li class="mx-3">
-                <a href="#" class="text-dark text-decoration-none">
+                <a href="/datenschutz.html" class="text-dark text-decoration-none">
                     <i class="bi bi-shield-lock-fill"></i> Datenschutz
                 </a>
             </li>
             <li class="mx-3">
-                <a href="#" class="text-dark text-decoration-none">
+                <a href="/impressum.html" class="text-dark text-decoration-none">
                     <i class="bi bi-file-earmark-text-fill"></i> Impressum
                 </a>
             </li>
